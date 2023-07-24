@@ -39,6 +39,13 @@ class PopUpView: UIView{
         return iv
     }()
     
+    let helpMessage: UIButton = {
+        let b = UIButton()
+        b.setTitle("Tap here to get cute Cat pics", for: .normal)
+        b.setTitleColor(.red, for: .normal)
+        return b
+    }()
+    
     let okButton: UIButton = {
         let b = UIButton()
         b.setTitle("Okay", for: .normal)
@@ -46,6 +53,8 @@ class PopUpView: UIView{
         b.setTitleColor(.blue, for: .normal)
         return b
     }()
+    
+    let activityIndicator = UIActivityIndicatorView(style: .medium)
     
     //MARK:  Class Properties
     weak var delegate: PopUpViewDelegate?
@@ -62,9 +71,15 @@ class PopUpView: UIView{
         addSubview(messageLabel)
         addSubview(imageView)
         addSubview(okButton)
+        addSubview(helpMessage)
+        addSubview(activityIndicator)
         
         okButton.addTarget(self, action: #selector(okButtonTapped), for: .touchUpInside)
-        imageView.image = UIImage(systemName: "pencil")
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(getRandomCatImage))
+        imageView.isUserInteractionEnabled = true
+        imageView.addGestureRecognizer(tapGesture)
+        helpMessage.addTarget(self, action: #selector(getRandomCatImage), for: .touchUpInside)
     }
     
     required init?(coder: NSCoder) {
@@ -74,7 +89,9 @@ class PopUpView: UIView{
     //MARK:  Lifecycle methods
     override func layoutSubviews() {
         super.layoutSubviews()
-        
+        helpMessage.frame = imageView.bounds
+        helpMessage.center = imageView.center
+        activityIndicator.center = imageView.center
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         messageLabel.translatesAutoresizingMaskIntoConstraints = false
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -110,5 +127,34 @@ class PopUpView: UIView{
     
     @objc private func okButtonTapped(){
         delegate?.didTapOkButton()
+    }
+    
+    @objc private func getRandomCatImage(){
+        helpMessage.isHidden = true
+        activityIndicator.startAnimating()
+        
+        APIService.shared.dataTask(CatRequest.getRandomCat) { [weak self] result in
+            var resultantImage: UIImage
+            switch result {
+            case .success(let imageData):
+                if let image = UIImage(data: imageData){
+                    resultantImage = image
+                } else{
+                    resultantImage = UIImage(systemName: "person")!
+                }
+            case .failure(let error):
+                print(error)
+                resultantImage = UIImage(systemName: "person")!
+            }
+            
+            self?.updateImageView(with: resultantImage)
+        }
+    }
+    
+    private func updateImageView(with image: UIImage){
+        DispatchQueue.main.async {
+            self.imageView.image = image
+            self.activityIndicator.stopAnimating()
+        }
     }
 }

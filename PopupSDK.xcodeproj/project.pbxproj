@@ -16,6 +16,9 @@
 		3AFE90EE2A6EB429001D8CE3 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90ED2A6EB429001D8CE3 /* PopUpViewController.swift */; };
 		3AFE90F02A6EB83D001D8CE3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90EF2A6EB83D001D8CE3 /* Extensions.swift */; };
 		3AFE90F22A6EC664001D8CE3 /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90F12A6EC664001D8CE3 /* PopUpView.swift */; };
+		3AFE90FB2A6ED5B3001D8CE3 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90F92A6ED5B3001D8CE3 /* APIService.swift */; };
+		3AFE90FC2A6ED5B3001D8CE3 /* CatRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90FA2A6ED5B3001D8CE3 /* CatRequest.swift */; };
+		3AFE90FE2A6ED5C2001D8CE3 /* APIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90FD2A6ED5C2001D8CE3 /* APIHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		3AFE90ED2A6EB429001D8CE3 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		3AFE90EF2A6EB83D001D8CE3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3AFE90F12A6EC664001D8CE3 /* PopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
+		3AFE90F92A6ED5B3001D8CE3 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		3AFE90FA2A6ED5B3001D8CE3 /* CatRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatRequest.swift; sourceTree = "<group>"; };
+		3AFE90FD2A6ED5C2001D8CE3 /* APIHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 				3AFE90EB2A6EB425001D8CE3 /* PopUpAlignmentEnum.swift */,
 				3AFE90EF2A6EB83D001D8CE3 /* Extensions.swift */,
 				3AFE90F12A6EC664001D8CE3 /* PopUpView.swift */,
+				3AFE90F92A6ED5B3001D8CE3 /* APIService.swift */,
+				3AFE90FA2A6ED5B3001D8CE3 /* CatRequest.swift */,
+				3AFE90FD2A6ED5C2001D8CE3 /* APIHelpers.swift */,
 			);
 			path = PopupSDK;
 			sourceTree = "<group>";
@@ -146,12 +155,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AFE90FE2A6ED5C2001D8CE3 /* APIHelpers.swift in Sources */,
 				3AFE90F22A6EC664001D8CE3 /* PopUpView.swift in Sources */,
 				3AFE90EE2A6EB429001D8CE3 /* PopUpViewController.swift in Sources */,
 				3AFE90F02A6EB83D001D8CE3 /* Extensions.swift in Sources */,
 				3AFE90CC2A6EA84E001D8CE3 /* AppDelegate.swift in Sources */,
 				3AFE90CE2A6EA84E001D8CE3 /* SceneDelegate.swift in Sources */,
 				3AFE90E22A6EAFB5001D8CE3 /* DemoViewController.swift in Sources */,
+				3AFE90FC2A6ED5B3001D8CE3 /* CatRequest.swift in Sources */,
+				3AFE90FB2A6ED5B3001D8CE3 /* APIService.swift in Sources */,
 				3AFE90EC2A6EB425001D8CE3 /* PopUpAlignmentEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
