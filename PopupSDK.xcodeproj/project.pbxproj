@@ -12,14 +12,33 @@
 		3AFE90D52A6EA850001D8CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFE90D42A6EA850001D8CE3 /* Assets.xcassets */; };
 		3AFE90D82A6EA850001D8CE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFE90D62A6EA850001D8CE3 /* LaunchScreen.storyboard */; };
 		3AFE90E22A6EAFB5001D8CE3 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90E12A6EAFB5001D8CE3 /* DemoViewController.swift */; };
-		3AFE90EC2A6EB425001D8CE3 /* PopUpAlignmentEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90EB2A6EB425001D8CE3 /* PopUpAlignmentEnum.swift */; };
-		3AFE90EE2A6EB429001D8CE3 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90ED2A6EB429001D8CE3 /* PopUpViewController.swift */; };
-		3AFE90F02A6EB83D001D8CE3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90EF2A6EB83D001D8CE3 /* Extensions.swift */; };
-		3AFE90F22A6EC664001D8CE3 /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90F12A6EC664001D8CE3 /* PopUpView.swift */; };
-		3AFE90FB2A6ED5B3001D8CE3 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90F92A6ED5B3001D8CE3 /* APIService.swift */; };
-		3AFE90FC2A6ED5B3001D8CE3 /* CatRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90FA2A6ED5B3001D8CE3 /* CatRequest.swift */; };
-		3AFE90FE2A6ED5C2001D8CE3 /* APIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90FD2A6ED5C2001D8CE3 /* APIHelpers.swift */; };
+		3AFE91522A6EE6B8001D8CE3 /* SDK_Popup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFE91502A6EE606001D8CE3 /* SDK_Popup.framework */; };
+		3AFE91532A6EE6B8001D8CE3 /* SDK_Popup.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFE91502A6EE606001D8CE3 /* SDK_Popup.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AFE914F2A6EE606001D8CE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AFE914B2A6EE606001D8CE3 /* SDK-Popup.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3AFE910A2A6EE412001D8CE3;
+			remoteInfo = "SDK-Popup";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3AFE91542A6EE6B8001D8CE3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3AFE91532A6EE6B8001D8CE3 /* SDK_Popup.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3AFE90C82A6EA84E001D8CE3 /* PopupSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopupSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,13 +48,7 @@
 		3AFE90D72A6EA850001D8CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AFE90D92A6EA850001D8CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AFE90E12A6EAFB5001D8CE3 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
-		3AFE90EB2A6EB425001D8CE3 /* PopUpAlignmentEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpAlignmentEnum.swift; sourceTree = "<group>"; };
-		3AFE90ED2A6EB429001D8CE3 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
-		3AFE90EF2A6EB83D001D8CE3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		3AFE90F12A6EC664001D8CE3 /* PopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
-		3AFE90F92A6ED5B3001D8CE3 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		3AFE90FA2A6ED5B3001D8CE3 /* CatRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatRequest.swift; sourceTree = "<group>"; };
-		3AFE90FD2A6ED5C2001D8CE3 /* APIHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelpers.swift; sourceTree = "<group>"; };
+		3AFE914B2A6EE606001D8CE3 /* SDK-Popup.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "SDK-Popup.xcodeproj"; path = "../../SDK-Popup/SDK-Popup.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AFE91522A6EE6B8001D8CE3 /* SDK_Popup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +68,7 @@
 			children = (
 				3AFE90CA2A6EA84E001D8CE3 /* PopupSDK */,
 				3AFE90C92A6EA84E001D8CE3 /* Products */,
+				3AFE91512A6EE6B8001D8CE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,21 +83,30 @@
 		3AFE90CA2A6EA84E001D8CE3 /* PopupSDK */ = {
 			isa = PBXGroup;
 			children = (
+				3AFE914B2A6EE606001D8CE3 /* SDK-Popup.xcodeproj */,
 				3AFE90CB2A6EA84E001D8CE3 /* AppDelegate.swift */,
 				3AFE90CD2A6EA84E001D8CE3 /* SceneDelegate.swift */,
 				3AFE90D42A6EA850001D8CE3 /* Assets.xcassets */,
 				3AFE90D62A6EA850001D8CE3 /* LaunchScreen.storyboard */,
 				3AFE90D92A6EA850001D8CE3 /* Info.plist */,
 				3AFE90E12A6EAFB5001D8CE3 /* DemoViewController.swift */,
-				3AFE90ED2A6EB429001D8CE3 /* PopUpViewController.swift */,
-				3AFE90EB2A6EB425001D8CE3 /* PopUpAlignmentEnum.swift */,
-				3AFE90EF2A6EB83D001D8CE3 /* Extensions.swift */,
-				3AFE90F12A6EC664001D8CE3 /* PopUpView.swift */,
-				3AFE90F92A6ED5B3001D8CE3 /* APIService.swift */,
-				3AFE90FA2A6ED5B3001D8CE3 /* CatRequest.swift */,
-				3AFE90FD2A6ED5C2001D8CE3 /* APIHelpers.swift */,
 			);
 			path = PopupSDK;
+			sourceTree = "<group>";
+		};
+		3AFE914C2A6EE606001D8CE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AFE91502A6EE606001D8CE3 /* SDK_Popup.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AFE91512A6EE6B8001D8CE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +119,7 @@
 				3AFE90C42A6EA84E001D8CE3 /* Sources */,
 				3AFE90C52A6EA84E001D8CE3 /* Frameworks */,
 				3AFE90C62A6EA84E001D8CE3 /* Resources */,
+				3AFE91542A6EE6B8001D8CE3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,12 +156,28 @@
 			mainGroup = 3AFE90BF2A6EA84E001D8CE3;
 			productRefGroup = 3AFE90C92A6EA84E001D8CE3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3AFE914C2A6EE606001D8CE3 /* Products */;
+					ProjectRef = 3AFE914B2A6EE606001D8CE3 /* SDK-Popup.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3AFE90C72A6EA84E001D8CE3 /* PopupSDK */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3AFE91502A6EE606001D8CE3 /* SDK_Popup.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDK_Popup.framework;
+			remoteRef = 3AFE914F2A6EE606001D8CE3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3AFE90C62A6EA84E001D8CE3 /* Resources */ = {
@@ -155,16 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AFE90FE2A6ED5C2001D8CE3 /* APIHelpers.swift in Sources */,
-				3AFE90F22A6EC664001D8CE3 /* PopUpView.swift in Sources */,
-				3AFE90EE2A6EB429001D8CE3 /* PopUpViewController.swift in Sources */,
-				3AFE90F02A6EB83D001D8CE3 /* Extensions.swift in Sources */,
 				3AFE90CC2A6EA84E001D8CE3 /* AppDelegate.swift in Sources */,
 				3AFE90CE2A6EA84E001D8CE3 /* SceneDelegate.swift in Sources */,
 				3AFE90E22A6EAFB5001D8CE3 /* DemoViewController.swift in Sources */,
-				3AFE90FC2A6ED5B3001D8CE3 /* CatRequest.swift in Sources */,
-				3AFE90FB2A6ED5B3001D8CE3 /* APIService.swift in Sources */,
-				3AFE90EC2A6EB425001D8CE3 /* PopUpAlignmentEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
