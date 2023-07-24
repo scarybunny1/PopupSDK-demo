@@ -12,6 +12,9 @@
 		3AFE90D52A6EA850001D8CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFE90D42A6EA850001D8CE3 /* Assets.xcassets */; };
 		3AFE90D82A6EA850001D8CE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFE90D62A6EA850001D8CE3 /* LaunchScreen.storyboard */; };
 		3AFE90E22A6EAFB5001D8CE3 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90E12A6EAFB5001D8CE3 /* DemoViewController.swift */; };
+		3AFE90EC2A6EB425001D8CE3 /* PopUpAlignmentEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90EB2A6EB425001D8CE3 /* PopUpAlignmentEnum.swift */; };
+		3AFE90EE2A6EB429001D8CE3 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90ED2A6EB429001D8CE3 /* PopUpViewController.swift */; };
+		3AFE90F02A6EB83D001D8CE3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90EF2A6EB83D001D8CE3 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		3AFE90D72A6EA850001D8CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AFE90D92A6EA850001D8CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AFE90E12A6EAFB5001D8CE3 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		3AFE90EB2A6EB425001D8CE3 /* PopUpAlignmentEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpAlignmentEnum.swift; sourceTree = "<group>"; };
+		3AFE90ED2A6EB429001D8CE3 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		3AFE90EF2A6EB83D001D8CE3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				3AFE90D62A6EA850001D8CE3 /* LaunchScreen.storyboard */,
 				3AFE90D92A6EA850001D8CE3 /* Info.plist */,
 				3AFE90E12A6EAFB5001D8CE3 /* DemoViewController.swift */,
+				3AFE90ED2A6EB429001D8CE3 /* PopUpViewController.swift */,
+				3AFE90EB2A6EB425001D8CE3 /* PopUpAlignmentEnum.swift */,
+				3AFE90EF2A6EB83D001D8CE3 /* Extensions.swift */,
 			);
 			path = PopupSDK;
 			sourceTree = "<group>";
@@ -134,9 +143,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AFE90EE2A6EB429001D8CE3 /* PopUpViewController.swift in Sources */,
+				3AFE90F02A6EB83D001D8CE3 /* Extensions.swift in Sources */,
 				3AFE90CC2A6EA84E001D8CE3 /* AppDelegate.swift in Sources */,
 				3AFE90CE2A6EA84E001D8CE3 /* SceneDelegate.swift in Sources */,
 				3AFE90E22A6EAFB5001D8CE3 /* DemoViewController.swift in Sources */,
+				3AFE90EC2A6EB425001D8CE3 /* PopUpAlignmentEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

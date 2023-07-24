@@ -9,6 +9,7 @@ import UIKit
 
 class DemoViewController: UIViewController {
     
+    //MARK: View Components
     let topButton: UIButton = {
         let b = UIButton()
         b.setTitle("Show Popup at the Top", for: .normal)
@@ -39,6 +40,7 @@ class DemoViewController: UIViewController {
         return sv
     }()
     
+    //MARK: Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -63,6 +65,7 @@ class DemoViewController: UIViewController {
         ])
     }
 
+    //MARK: Class Helper methods
     private func setUpButtons(){
         topButton.addTarget(self, action: #selector(didTapPopUpButton), for: .touchUpInside)
         centerButton.addTarget(self, action: #selector(didTapPopUpButton), for: .touchUpInside)
@@ -72,10 +75,13 @@ class DemoViewController: UIViewController {
     @objc private func didTapPopUpButton(_ sender: UIButton){
         if sender == topButton{
             // Show popup on top
+            showPopUp(alignment: .top(offset: 20))
         } else if sender == centerButton{
             // Show popup in the center
+            showPopUp(alignment: .center)
         } else{
             // Show popup at bottpm
+            showPopUp(alignment: .bottom(offset: 20))
         }
     }
 }
