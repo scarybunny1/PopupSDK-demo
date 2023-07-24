@@ -49,6 +49,7 @@ class DemoViewController: UIViewController {
         stackView.addArrangedSubview(bottomButton)
         
         view.addSubview(stackView)
+        view.backgroundColor = .systemBackground
         
         setUpButtons()
     }

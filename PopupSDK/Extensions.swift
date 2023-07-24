@@ -10,7 +10,7 @@ import UIKit
 extension UIViewController{
     public func showPopUp(alignment: PopUpAlignment){
         let vc = PopUpViewController(popUpAlignment: alignment)
-        vc.modalPresentationStyle = .fullScreen
+        vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: false)
     }
 }

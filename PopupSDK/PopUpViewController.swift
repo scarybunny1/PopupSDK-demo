@@ -24,22 +24,17 @@ public class PopUpViewController: UIViewController {
     }
     
     //MARK:  Class UI components
-    let popupView: UIView = {
-        let view = UIView()
-        view.layer.cornerRadius = 8
-        view.backgroundColor = .systemBackground
-        return view
-    }()
-    
+    let popupView = PopUpView()
     let blurView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
     
     //MARK:  Lifecycle methods
     public override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .clear
-        popupView.backgroundColor = .blue
         view.addSubview(blurView)
         view.addSubview(popupView)
+        popupView.delegate = self
+        popupView.configure(title: "Pop-up title", message: "This is the pop-up message...")
     }
     
     public override func viewDidLayoutSubviews() {
@@ -57,9 +52,6 @@ public class PopUpViewController: UIViewController {
             popupView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8)
         ])
         
-        let heightAnchor = popupView.heightAnchor.constraint(equalToConstant: 300)
-        heightAnchor.isActive = true
-        
         switch popUpAlignment {
         case .top(let offset):
             popupView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: offset).isActive = true
@@ -72,3 +64,8 @@ public class PopUpViewController: UIViewController {
     }
 }
 
+extension PopUpViewController: PopUpViewDelegate{
+    func didTapOkButton() {
+        dismiss(animated: false)
+    }
+}
