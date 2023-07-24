@@ -12,17 +12,17 @@
 		3AFE90D52A6EA850001D8CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFE90D42A6EA850001D8CE3 /* Assets.xcassets */; };
 		3AFE90D82A6EA850001D8CE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFE90D62A6EA850001D8CE3 /* LaunchScreen.storyboard */; };
 		3AFE90E22A6EAFB5001D8CE3 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE90E12A6EAFB5001D8CE3 /* DemoViewController.swift */; };
-		3AFE91522A6EE6B8001D8CE3 /* SDK_Popup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFE91502A6EE606001D8CE3 /* SDK_Popup.framework */; };
-		3AFE91532A6EE6B8001D8CE3 /* SDK_Popup.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFE91502A6EE606001D8CE3 /* SDK_Popup.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AFE918A2A6EEB65001D8CE3 /* Popup_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFE91892A6EEB24001D8CE3 /* Popup_sdk.framework */; };
+		3AFE918B2A6EEB65001D8CE3 /* Popup_sdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFE91892A6EEB24001D8CE3 /* Popup_sdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3AFE914F2A6EE606001D8CE3 /* PBXContainerItemProxy */ = {
+		3AFE91882A6EEB24001D8CE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3AFE914B2A6EE606001D8CE3 /* SDK-Popup.xcodeproj */;
+			containerPortal = 3AFE91842A6EEB24001D8CE3 /* Popup-sdk.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 3AFE910A2A6EE412001D8CE3;
-			remoteInfo = "SDK-Popup";
+			remoteGlobalIDString = 3AFE915F2A6EE960001D8CE3;
+			remoteInfo = "Popup-sdk";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -33,7 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3AFE91532A6EE6B8001D8CE3 /* SDK_Popup.framework in Embed Frameworks */,
+				3AFE918B2A6EEB65001D8CE3 /* Popup_sdk.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,7 +48,7 @@
 		3AFE90D72A6EA850001D8CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AFE90D92A6EA850001D8CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AFE90E12A6EAFB5001D8CE3 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
-		3AFE914B2A6EE606001D8CE3 /* SDK-Popup.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "SDK-Popup.xcodeproj"; path = "../../SDK-Popup/SDK-Popup.xcodeproj"; sourceTree = "<group>"; };
+		3AFE91842A6EEB24001D8CE3 /* Popup-sdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Popup-sdk.xcodeproj"; path = "../../Popup-sdk/Popup-sdk.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AFE91522A6EE6B8001D8CE3 /* SDK_Popup.framework in Frameworks */,
+				3AFE918A2A6EEB65001D8CE3 /* Popup_sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 		3AFE90CA2A6EA84E001D8CE3 /* PopupSDK */ = {
 			isa = PBXGroup;
 			children = (
-				3AFE914B2A6EE606001D8CE3 /* SDK-Popup.xcodeproj */,
+				3AFE91842A6EEB24001D8CE3 /* Popup-sdk.xcodeproj */,
 				3AFE90CB2A6EA84E001D8CE3 /* AppDelegate.swift */,
 				3AFE90CD2A6EA84E001D8CE3 /* SceneDelegate.swift */,
 				3AFE90D42A6EA850001D8CE3 /* Assets.xcassets */,
@@ -94,19 +94,19 @@
 			path = PopupSDK;
 			sourceTree = "<group>";
 		};
-		3AFE914C2A6EE606001D8CE3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3AFE91502A6EE606001D8CE3 /* SDK_Popup.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		3AFE91512A6EE6B8001D8CE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AFE91852A6EEB24001D8CE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AFE91892A6EEB24001D8CE3 /* Popup_sdk.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +158,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 3AFE914C2A6EE606001D8CE3 /* Products */;
-					ProjectRef = 3AFE914B2A6EE606001D8CE3 /* SDK-Popup.xcodeproj */;
+					ProductGroup = 3AFE91852A6EEB24001D8CE3 /* Products */;
+					ProjectRef = 3AFE91842A6EEB24001D8CE3 /* Popup-sdk.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -170,11 +170,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3AFE91502A6EE606001D8CE3 /* SDK_Popup.framework */ = {
+		3AFE91892A6EEB24001D8CE3 /* Popup_sdk.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = SDK_Popup.framework;
-			remoteRef = 3AFE914F2A6EE606001D8CE3 /* PBXContainerItemProxy */;
+			path = Popup_sdk.framework;
+			remoteRef = 3AFE91882A6EEB24001D8CE3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
